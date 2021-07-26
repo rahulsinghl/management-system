@@ -120,8 +120,12 @@
     <script src="{{asset('assets/vendor/js/demo/datatables-demo.js')}}"></script>
     
              
-   
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   @if (Session::has('success'))
+   <script type="text/javascript">swal("", "{{ Session::get('success')}}", "success");</script>
+   @endif
    
     @yield('scripts')
+
 </body>
 </html>

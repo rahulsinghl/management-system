@@ -111,7 +111,7 @@
 
         }
         else if(e.status==200){
-          window.location.href='<?php echo route('login') ?>'
+          window.location.href='<?php echo route('dashboard') ?>'
         }
             },
             error:function(a){

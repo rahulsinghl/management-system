@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
+use App\Models\Customer;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +46,5 @@ route::post('customer/store','Admin\CustomerController@store')->name('customer.s
 
 // delete customer
 
-route::delete('customer/delete/{id}','Admin\CustomerController@delete')->name('customer.delete');
-
+route::get('customer/delete/{id}','Admin\CustomerController@delete')->name('customer.delete');
+route::post('addgroup','Admin\Customercontroller@addGroup')->name('add-group');
