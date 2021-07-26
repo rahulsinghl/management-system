@@ -7,8 +7,8 @@
     dashboard
 @stop
 @section('scripts')
-<script type="text/javascript">
+<!-- <script type="text/javascript">
    alert('test');
 </script>
-
+ -->
 @endsection
